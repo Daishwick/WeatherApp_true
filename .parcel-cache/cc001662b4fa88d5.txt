@@ -1,0 +1,11 @@
+10
+75C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\index.html132765529953468032 0
+79C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\.gitattributes132765411422165339 0
+77C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\package.json132765495866175657 0
+75C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\.gitignore132765494664524870 0
+77C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\node_modules132765501156009961 1
+68C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\src132765498938789501 1
+78C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\src\style.css132765529941176401 0
+85C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\node_modules\deasync132765501150631117 1
+77C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\src\index.js132765529970728517 0
+89C:\Users\riji\OneDrive - Summacollege\Code repository\WeatherApp\node_modules\deasync\bin132765501150122472 1
