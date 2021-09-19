@@ -1,0 +1,71 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 60px 0px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(4, 51, 12, 0.4);
+
+  position: relative;
+  background: linear-gradient(to top, #f3e7e9 30%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.searchbar {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.bigicon {
+  color: darkgoldenrod;
+}
+
+.weeklyweather {
+  text-align: center;
+  padding: 65px;
+}
+.day1,
+.day2,
+.day3,
+.day4,
+.day5 {
+  padding: 15px;
+}
+.tinyicon {
+  text-align: center;
+  padding: 15px;
+}
+
+.subinfo {
+  padding: 45px;
+}
+.currentinfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+}
+
+.feelslike {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+}
+
+.buttonicons {
+  background-color: white;
+}

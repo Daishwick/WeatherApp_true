@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link ref="stylesheet" href="./src/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8ac313f442.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Weather app</title>
+    <meta charset="UTF-8"
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-group searchbar">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="City name"
+          aria-label="City name"
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append buttonicons">
+          <button class="btn btn-outline-secondary " type="button">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="btn btn-outline-secondary " type="button">
+            <i class="fa fa-location-arrow"></i>
+          </button>
+        </div>
+      </div>
+
+      <h1>
+        Mierlo
+      </h1>
+      <h2>
+        25°C
+        <br />
+        <i class="fa fa-sun bigicon"></i>
+      </h2>
+      <div class="row weeklyweather">
+        <div class="col day1">
+					<div> FRI </div>
+						<div><i class="fa fa-cloud-sun tinyicon"></i> </div>
+						<div> 15°C <br> <small> 12°C</small> </div>
+				</div>
+			 
+				<div class="col day2">
+					<div>SAT </div>
+					<div> <i class="fa fa-cloud-showers-heavy tinyicon"></i></div>
+					<div>17°C <br> <small> 12°C</small></div>
+				 </div>
+			 
+				 <div class="col day3">
+				<div>	SUN </div>
+					<div> <i class="fa fa-cloud-showers-heavy tinyicon"></i></div>
+					<div>15°C <br><small> 13°C</small></div> 
+				</div>
+			 
+					<div class="col day4">
+					<div> MON </div> 
+				<div> <i class="fa fa-cloud-sun tinyicon"> </i> </div>
+					<div> 20°C <br><small> 14°C</small></div> 
+				</div>
+			 
+					<div class="col day5">
+					<div> TUE </div> 
+					<div> <i class="fa fa-sun tinyicon"> </i> </div> 
+					<div> 25°C<br><small> 20°C</small></div> 
+					</div>
+			</div>
+			
+<div class="subinfo">
+      <p class="currentinfo">
+					Thursday,
+					<br> 27-7-2021 15:40 </p>
+					
+        <p class="feelslike"> 
+					Feels like:  15°C
+					
+				<br> Rainfall: 17:16-18:35<br></p>
+				</div>
+      </div>
+		</div>
+		
+		
+  </body>
+</html>
