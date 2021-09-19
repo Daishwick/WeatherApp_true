@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "npm ci && parcel build index.html"
   },
   "dependencies": {
     "parcel-bundler": "^1.6.1"
