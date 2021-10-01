@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-     <link href="./src/style.css" rel="stylesheet" type="text/css" />
+    <link href="./src/style.css" rel="stylesheet" type="text/css" />
     <script
       src="https://kit.fontawesome.com/8ac313f442.js"
       crossorigin="anonymous"
     ></script>
 
     <title>Weather app</title>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8" />
   </head>
   <body>
     <div class="container">
@@ -35,61 +35,80 @@
           id="searchbar"
         />
         <div class="input-group-append buttonicons">
-          <button class="btn btn-outline-secondary " type="button"
-          id="searchbutton">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="searchbutton"
+          >
             <i class="fa fa-search"></i>
           </button>
-          <button class="btn btn-outline-secondary " type="button"
-          id="locationbutton">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="locationbutton"
+          >
             <i class="fa fa-location-arrow"></i>
           </button>
         </div>
       </div>
 
-      <h1 id="City-name">
-        Mierlo
-      </h1>
-      <h2 >
-        <a id="temperature" href="#"> <span id="degrees">25</span>°<span id="unit" >C</span> </a>
+      <h1 id="City-name">Mierlo</h1>
+      <h2>
+        <a id="temperature" href="#">
+          <span id="degrees">25</span>°<span id="unit">C</span>
+        </a>
         <br />
         <i class="fa fa-sun bigicon"></i>
       </h2>
       <div class="row weeklyweather">
         <div class="col day1">
-					<div> FRI </div>
-						<div><i class="fa fa-cloud-sun tinyicon"></i> </div>
-            <div><a id="tempFri" href="#">  <span id="degreesFriDay">15</span>°<span id="unitFriDay">C</span> 
-              <br> <small>   <span id="degreesFriNig">12</span>°<span id="unitFriNig">C</span> </small></a> </div>
-				</div>
-			 
-				<div class="col day2">
-					<div>SAT </div>
-					<div> <i class="fa fa-cloud-showers-heavy tinyicon"></i></div>
-					<div>17°C <br> <small> 12°C</small></div>
-				 </div>
-			 
-				 <div class="col day3">
-				<div>	SUN </div>
-					<div> <i class="fa fa-cloud-showers-heavy tinyicon"></i></div>
-					<div>15°C <br><small> 13°C</small></div> 
-				</div>
-			 
-					<div class="col day4">
-					<div> MON </div> 
-				<div> <i class="fa fa-cloud-sun tinyicon"> </i> </div>
-					<div> 20°C <br><small> 14°C</small></div> 
-				</div>
-			 
-					<div class="col day5">
-					<div> TUE </div> 
-					<div> <i class="fa fa-sun tinyicon"> </i> </div> 
-					<div> 25°C<br><small> 20°C</small></div> 
-					</div>
-			</div>
-			
-<div class="subinfo">
+          <div>FRI</div>
+          <div><i class="fa fa-cloud-sun tinyicon"></i></div>
+          <div>
+            <a id="tempFri" href="#">
+              <span id="degreesFriDay">15</span>°<span id="unitFriDay">C</span>
+              <br />
+              <small>
+                <span id="degreesFriNig">12</span>°<span id="unitFriNig"
+                  >C</span
+                >
+              </small></a
+            >
+          </div>
+        </div>
+
+        <div class="col day2">
+          <div>SAT</div>
+          <div><i class="fa fa-cloud-showers-heavy tinyicon"></i></div>
+          <div>
+            17°C <br />
+            <small> 12°C</small>
+          </div>
+        </div>
+
+        <div class="col day3">
+          <div>SUN</div>
+          <div><i class="fa fa-cloud-showers-heavy tinyicon"></i></div>
+          <div>15°C <br /><small> 13°C</small></div>
+        </div>
+
+        <div class="col day4">
+          <div>MON</div>
+          <div><i class="fa fa-cloud-sun tinyicon"> </i></div>
+          <div>20°C <br /><small> 14°C</small></div>
+        </div>
+
+        <div class="col day5">
+          <div>TUE</div>
+          <div><i class="fa fa-sun tinyicon"> </i></div>
+          <div>25°C<br /><small> 20°C</small></div>
+        </div>
+      </div>
+
+
+    <div class="subinfo">
       <p id="currentinfo">
-					Thursday,
+					Wednesday,
 					<br id="currentdate"> 27-7-2021, 15:40 </p>
 					
         <p class="feelslike"> 
@@ -99,19 +118,18 @@
 				</div>
       </div>
 		</div>
-    
-      <p class="footer">
-        
-        <a
+
+    <p class="footer">
+      <a
         href="https://github.com/Daishwick/WeatherApp_true"
         target="_blank"
         class="MySourcecode"
-        >
+      >
         Open-source code
       </a>
       by Jitske Riswick
     </p>
-  
-		<script src="src/index.js"></script>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
