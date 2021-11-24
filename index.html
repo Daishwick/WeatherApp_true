@@ -52,11 +52,13 @@
         </div>
       </div>
 
-      <h1 id="City-name">Mierlo</h1>
+      <h1 id="City-name"></h1>
       <h2>
-        <a id="temperature" href="#">
-          <span id="degrees">25</span>°<span id="unit">C</span>
-        </a>
+        <div class="weather-temperature">
+          <span id="degrees"></span>
+          <a href="#" id="celsius-link" class="active">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a>
+        </div>
         <br />
         <i class="fa fa-sun bigicon"></i>
       </h2>
@@ -105,19 +107,21 @@
         </div>
       </div>
 
+      <div class="subinfo">
+        <p id="currentinfo">
+          Wednesday,
+          <br id="currentdate" />
+          27-7-2021, 15:40
+        </p>
 
-    <div class="subinfo">
-      <p id="currentinfo">
-					Wednesday,
-					<br id="currentdate"> 27-7-2021, 15:40 </p>
-					
-        <p class="feelslike"> 
-					Feels like:  15°C
-					
-				<br> Rainfall: 17:16-18:35<br></p>
-				</div>
+        <p class="feelslike">
+          Feels like: 15°C
+
+          <br />
+          Rainfall: 17:16-18:35<br />
+        </p>
       </div>
-		</div>
+    </div>
 
     <p class="footer">
       <a

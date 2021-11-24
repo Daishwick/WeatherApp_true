@@ -5,6 +5,7 @@ function showTemperature(response) {
   console.log(temperature);
   let currentTemperature = document.querySelector("#degrees");
   currentTemperature.innerHTML = temperature;
+  celciusTemperature = response.data.main.temp;
 }
 
 function click(event) {
@@ -35,12 +36,11 @@ function showPosition(position) {
 }
 
 function getTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  console.log(temperature);
+  celciusTemperature = Math.round(response.data.main.temp);
   let currentTemperature = document.querySelector("#degrees");
   let currentPosition = document.querySelector("#City-name");
   currentPosition.innerHTML = response.data.name;
-  currentTemperature.innerHTML = temperature;
+  currentTemperature.innerHTML = celciusTemperature;
 }
 
 function getPosition() {
@@ -80,3 +80,28 @@ function formatDate(now) {
 
 let currentinfo = document.querySelector("#currentinfo");
 currentinfo.innerHTML = formatDate(new Date());
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let degreesElement = document.querySelector("#degrees");
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  degreesElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelciusTemperature(event) {
+  event.preventDefault();
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#degrees");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+let celciusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celciusLink = document.querySelector("#celsius-link");
+celciusLink.addEventListener("click", displayCelciusTemperature);
