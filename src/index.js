@@ -2,10 +2,15 @@
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
-  console.log(temperature);
   let currentTemperature = document.querySelector("#degrees");
+  let currentPosition = document.querySelector("#City-name");
   currentTemperature.innerHTML = temperature;
   celciusTemperature = response.data.main.temp;
+  let feelslike = Math.round(response.data.main.feels_like);
+  let feelslikevalue = document.querySelector("#FeelslikeTemp");
+  feelslikevalue.innerHTML = feelslike;
+  currentPosition.innerHTML = response.data.name;
+  console.log(Math.round(response.data.main.feels_like));
 }
 
 function click(event) {
@@ -20,7 +25,7 @@ function fetchTemp(cityname) {
   let units = "metric";
   let apiKey = "1887250fbd68c3f9205830915ce15b04";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=${units}&appid=${apiKey}`;
-  console.log("Url", apiUrl);
+
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 }
 let searchbutton = document.querySelector("#searchbutton");
@@ -32,16 +37,19 @@ function showPosition(position) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let unit = "metric";
   let currentPosition = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${unit}`;
-  axios.get(`${currentPosition}`).then(getTemperature);
+  axios.get(`${currentPosition}`).then(showTemperature);
 }
 
-function getTemperature(response) {
-  celciusTemperature = Math.round(response.data.main.temp);
-  let currentTemperature = document.querySelector("#degrees");
-  let currentPosition = document.querySelector("#City-name");
-  currentPosition.innerHTML = response.data.name;
-  currentTemperature.innerHTML = celciusTemperature;
-}
+// function getTemperature(response) {
+//   celciusTemperature = Math.round(response.data.main.temp);
+//   FeelslikeValue = Math.round(response.data.main.feels_like);
+//   let currentTemperature = document.querySelector("#degrees");
+//   let currentPosition = document.querySelector("#City-name");
+//   let feelslike = document.querySelector("#FeelslikeTemp");
+//   feelslike.innerHTML = FeelslikeValue;
+//   currentPosition.innerHTML = response.data.name;
+//   currentTemperature.innerHTML = celciusTemperature;
+// }
 
 function getPosition() {
   navigator.geolocation.getCurrentPosition(showPosition);
@@ -105,3 +113,14 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celciusLink = document.querySelector("#celsius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#searchbar");
+  fetchTemp(cityInputElement.value);
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  fetchTemp("Eindhoven");
+  document.getElementById("City-name").innerHTML = "Eindhoven";
+});

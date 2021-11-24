@@ -28,6 +28,9 @@ p {
   background: linear-gradient(to top, #f3e7e9 30%, #e3eeff 99%, #e3eeff 100%);
 }
 
+form {
+  background-color: none;
+}
 .searchbar {
   text-align: center;
   width: 400px;
