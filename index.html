@@ -26,8 +26,8 @@
   <body>
     <div class="container">
       <div class="input-group searchbar">
-      <!-- <form id="search-form" class="mb-3"> -->
-       <input
+        <!-- <form id="search-form" class="mb-3"> -->
+        <input
           type="search"
           class="form-control"
           placeholder="City name"
@@ -52,7 +52,6 @@
           </button>
         </div>
       </div>
-      </form>
 
       <h1 id="City-name"></h1>
       <h2>
@@ -109,19 +108,17 @@
         </div>
       </div>
 
-      <div class="subinfo">
-        <p id="currentinfo">
-          Wednesday,
-          <br id="currentdate" />
-          27-7-2021, 15:40
-        </p>
+      <div class="row">
+        <div class="col left">
+          Last updated: <br />
+          <span id="date"> </span>
+        </div>
+        <div class="col middle">&nbsp;</div>
 
-        <p class="feelslike">
+        <div class="col right">
+          <span id="description"></span><br />
           Feels like: <span id="FeelslikeTemp"></span>°C
-
-          <br />
-          Rainfall: 17:16-18:35<br />
-        </p>
+        </div>
       </div>
     </div>
 

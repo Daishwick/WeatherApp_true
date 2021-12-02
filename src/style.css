@@ -58,18 +58,31 @@ form {
   padding: 15px;
 }
 
-.currentinfo {
+/* .currentinfo {
   position: absolute;
   bottom: 0;
   left: 0;
   padding-left: 10px;
-}
+} */
 
-.feelslike {
+/* .feelslike {
   position: absolute;
   bottom: 0;
   right: 0;
   padding-right: 10px;
+  text-transform: capitalize;
+} */
+
+.left {
+  padding: 0 15px;
+}
+
+.middle {
+  padding: 0 100px;
+}
+
+.right:first-letter {
+  text-transform: capitalize;
 }
 
 .buttonicons {

@@ -1,16 +1,36 @@
 // const { default: axios } = require("axios");
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = (date.getHours() < 10 ? "0" : "") + date.getHours();
+  let minutes = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day}, ${hours}:${minutes}`;
+}
 
 function showTemperature(response) {
+  console.log(response.data.weather[0].description);
   let temperature = Math.round(response.data.main.temp);
   let currentTemperature = document.querySelector("#degrees");
   let currentPosition = document.querySelector("#City-name");
-  currentTemperature.innerHTML = temperature;
-  celciusTemperature = response.data.main.temp;
   let feelslike = Math.round(response.data.main.feels_like);
   let feelslikevalue = document.querySelector("#FeelslikeTemp");
+  let descriptionElement = document.querySelector("#description");
+  let dateElement = document.querySelector("#date");
+  currentTemperature.innerHTML = temperature;
+  celciusTemperature = response.data.main.temp;
   feelslikevalue.innerHTML = feelslike;
+  descriptionElement.innerHTML = response.data.weather[0].description;
   currentPosition.innerHTML = response.data.name;
-  console.log(Math.round(response.data.main.feels_like));
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function click(event) {
@@ -66,28 +86,6 @@ document
       document.getElementById("searchbutton").click();
     }
   });
-
-function formatDate(now) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[now.getDay()];
-  let month = now.getMonth() + 1;
-  let year = now.getFullYear();
-  let hour = now.getHours();
-  let minute = (now.getMinutes() < 10 ? "0" : "") + now.getMinutes();
-  let date = now.getDate();
-  return `${day},</br> ${date}-${month}-${year}, ${hour}:${minute}`;
-}
-
-let currentinfo = document.querySelector("#currentinfo");
-currentinfo.innerHTML = formatDate(new Date());
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
