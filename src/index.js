@@ -24,6 +24,7 @@ function showTemperature(response) {
   let feelslikevalue = document.querySelector("#FeelslikeTemp");
   let descriptionElement = document.querySelector("#description");
   let dateElement = document.querySelector("#date");
+  let windspeedElement = document.querySelector("#windspeed");
   let iconElement = document.querySelector("#icon");
   currentTemperature.innerHTML = temperature;
   celciusTemperature = response.data.main.temp;
@@ -31,6 +32,7 @@ function showTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   currentPosition.innerHTML = response.data.name;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  windspeedElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
     ` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`

@@ -12,6 +12,11 @@ p {
   font-style: italic;
 }
 
+li {
+  list-style: none;
+  font-size: 10px;
+}
+
 .footer {
   text-align: center;
   margin-top: 40px;
