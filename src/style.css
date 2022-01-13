@@ -6,17 +6,25 @@ h2 {
   text-align: center;
   padding: 15px;
 }
-
 p {
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
+  font-size: 10px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
 }
-
 li {
   list-style: none;
   font-size: 10px;
+  display: inline-block;
 }
-
+.col-6 {
+  margin: 0 auto;
+}
+.col-5 {
+  margin: 0 auto;
+}
 .footer {
   text-align: center;
   margin-top: 40px;
@@ -24,18 +32,23 @@ li {
 }
 .container {
   max-width: 600px;
-  margin: 0px auto;
+  margin: 30px auto;
   padding: 20px 0px;
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(4, 51, 12, 0.4);
-
+  color: aliceblue;
   position: relative;
-  background: linear-gradient(to top, #f3e7e9 30%, #e3eeff 99%, #e3eeff 100%);
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(39, 62, 77) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
 }
 
-form {
-  background-color: none;
-}
 .searchbar {
   text-align: center;
   width: 400px;
@@ -43,62 +56,20 @@ form {
   padding: 40px;
 }
 
-.bigicon {
-  color: darkgoldenrod;
-}
-
-.weeklyweather {
-  text-align: center;
-  padding: 40px;
-}
-.day1,
-.day2,
-.day3,
-.day4,
-.day5 {
-  padding: 15px;
-}
-.tinyicon {
-  text-align: center;
-  padding: 15px;
-}
-
-/* .currentinfo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding-left: 10px;
-} */
-
-/* .feelslike {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-right: 10px;
-  text-transform: capitalize;
-} */
-
-.left {
-  padding: 0 15px;
-}
-
-.middle {
-  padding: 0 100px;
-}
-
-.right:first-letter {
-  text-transform: capitalize;
-}
-
-.buttonicons {
-  background-color: white;
-}
 .weather-temperature .active {
-  color: black;
+  color: aliceblue;
   cursor: default;
   text-decoration: none;
 }
 
+.col-2 {
+  margin: 50px 0 50px;
+}
+
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }

@@ -54,37 +54,37 @@
       </div>
 
       <h1 id="City-name"></h1>
-      <h2>
-        <div class="weather-temperature">
+
+      <div class="weather-temperature">
+        <h2>
           <span id="degrees"></span>
           <a href="#" id="celsius-link" class="active">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>
-          <br />
-          <ul>
-            <li>Wind: <span id="windspeed"></span> Km/h</li>
-          </ul>
-        </div>
+        </h2>
         <br />
 
-        <img src=".." alt="Clear" id="icon" class="float-left" />
-      </h2>
-      <div class="weather-forecast" id="forecast"></div>
+        <div class="col-6">
+          <ul>
+            <li><img src=".." alt="Clear" id="icon" class="float-left" /></li>
 
-      <div class="row">
-        <div class="col left">
-          Last updated: <br />
-          <span id="date"> </span>
+            <li>
+              Wind: <span id="windspeed"></span> Km/h<br />
+              Weather condition: <span id="description"></span><br />
+              Feels like: <span id="FeelslikeTemp"></span>°C
+            </li>
+          </ul>
         </div>
-        <div class="col middle">&nbsp;</div>
 
-        <div class="col right">
-          <span id="description"></span><br />
-          Feels like: <span id="FeelslikeTemp"></span>°C
+        <div class="weather-forecast" id="forecast"></div>
+        <div class="Updated">
+          <p>
+            Last updated: <br />
+            <span id="date"> </span>
+          </p>
         </div>
       </div>
     </div>
-
-    <p class="footer">
+    <small class="footer">
       <a
         href="https://github.com/Daishwick/WeatherApp_true"
         target="_blank"
@@ -93,8 +93,7 @@
         Open-source code
       </a>
       by Jitske Riswick
-    </p>
-
+    </small>
     <script src="src/index.js"></script>
   </body>
 </html>
