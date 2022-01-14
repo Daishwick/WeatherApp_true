@@ -106,7 +106,7 @@ function fetchTemp(cityname) {
   let apiKey = "1887250fbd68c3f9205830915ce15b04";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=${units}&appid=${apiKey}`;
 
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+  axios.get(apiUrl).then(showTemperature);
 }
 let searchbutton = document.querySelector("#searchbutton");
 searchbutton.addEventListener("click", click);
