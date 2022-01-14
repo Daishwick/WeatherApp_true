@@ -25,75 +25,80 @@
   </head>
   <body>
     <div class="container">
-      <div class="input-group searchbar">
-        <!-- <form id="search-form" class="mb-3"> -->
-        <input
-          type="search"
-          class="form-control"
-          placeholder="City name"
-          aria-label="City name"
-          aria-describedby="basic-addon2"
-          id="searchbar"
-        />
-        <div class="input-group-append buttonicons">
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="searchbutton"
-          >
-            <i class="fa fa-search"></i>
-          </button>
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="locationbutton"
-          >
-            <i class="fa fa-location-arrow"></i>
-          </button>
-        </div>
-      </div>
-
-      <h1 id="City-name"></h1>
-
-      <div class="weather-temperature">
-        <h2>
-          <span id="degrees"></span>
-          <a href="#" id="celsius-link" class="active">°C</a> |
-          <a href="#" id="fahrenheit-link">°F</a>
-        </h2>
-        <br />
-        <div class="middle">
-          <div class="left">
-            <img src=".." alt="Clear" id="icon" class="float-left" />
-          </div>
-          <div class="right">
-            <ul>
-              <li>Wind: <span id="windspeed"></span> Km/h</li>
-              <li>Weather condition: <span id="description"></span></li>
-              <li>Feels like: <span id="FeelslikeTemp"></span>°C</li>
-            </ul>
+      <div class="content">
+        <div class="input-group searchbar">
+          <!-- <form id="search-form" class="mb-3"> -->
+          <input
+            type="search"
+            class="form-control"
+            placeholder="City name"
+            aria-label="City name"
+            aria-describedby="basic-addon2"
+            id="searchbar"
+          />
+          <div class="input-group-append buttonicons">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="searchbutton"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="locationbutton"
+            >
+              <i class="fa fa-location-arrow"></i>
+            </button>
           </div>
         </div>
 
-        <div class="weather-forecast" id="forecast"></div>
-        <div class="Updated">
-          <p>
-            Last updated: <br />
-            <span id="date"> </span>
-          </p>
+        <h1 id="City-name"></h1>
+
+        <div class="weather-temperature">
+          <div class="current-temperature">
+            <h2>
+              <span id="degrees"></span>
+              <a href="#" id="celsius-link" class="active">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </h2>
+          </div>
+          <br />
+          <div class="middle">
+            <div class="left">
+              <img src=".." alt="Clear" id="icon" class="float-left" />
+            </div>
+            <div class="right">
+              <ul>
+                <li>Wind: <span id="windspeed"></span> Km/h</li>
+                <li>Weather condition: <span id="description"></span></li>
+                <li>Feels like: <span id="FeelslikeTemp"></span>°C</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="weather-forecast" id="forecast"></div>
+          <div class="Updated"></div>
         </div>
+        <p>
+          Last updated: <br />
+          <span id="date"> </span>
+        </p>
       </div>
     </div>
-    <small class="footer">
-      <a
-        href="https://github.com/Daishwick/WeatherApp_true"
-        target="_blank"
-        class="MySourcecode"
-      >
-        Open-source code
-      </a>
-      by Jitske Riswick
-    </small>
+    <div class="footer">
+      <small>
+        <a
+          href="https://github.com/Daishwick/WeatherApp_true"
+          target="_blank"
+          class="MySourcecode"
+        >
+          Open-source code
+        </a>
+        by Jitske Riswick
+      </small>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

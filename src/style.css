@@ -4,7 +4,7 @@ body {
 h1,
 h2 {
   text-align: center;
-  padding: 15px;
+  padding: 0;
 }
 p {
   font-size: 10px;
@@ -14,11 +14,12 @@ p {
   right: 0;
   margin: 0 auto;
 }
+
 li {
   list-style: none;
 }
 
-li:first-letter {
+li::first-letter {
   text-transform: capitalize;
 }
 
@@ -32,6 +33,10 @@ li:first-letter {
 .right {
   float: left;
 }
+
+.right ul {
+  margin-top: 12px;
+}
 .footer {
   text-align: center;
   margin-top: 40px;
@@ -39,6 +44,7 @@ li:first-letter {
 }
 .container {
   max-width: 600px;
+  min-height: 600px;
   margin: 30px auto;
   padding: 20px 0px;
   border-radius: 4px;
@@ -77,4 +83,11 @@ li:first-letter {
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+}
+
+.row {
+  margin-top: 50px;
+}
+.col-2 {
+  text-align: center;
 }

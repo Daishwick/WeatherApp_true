@@ -30,10 +30,10 @@ function displayForecast(response) {
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="row justify-content-md-center">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         ` 
